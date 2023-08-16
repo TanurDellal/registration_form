@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Welcome to my registration form!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+        <label id="number-label" for="number">Age: <input id="number" type="number" name="number" min="13" max="120" placeholder="Age" /></label>
+      </fieldset>
+      <fieldset>
+        <label id="occupation" for="dropdown">What is your occupation?
+          <select id="dropdown" name="dropdown">
+            <option value="" disabled>(select one)</option>
+            <option value="1">Full-time Student</option>
+            <option value="2">Full-time Worker</option>
+          </select>
+        </label>
+        <p>What is your field of interest?</p>
+        <label for="cyber-security"><input id="cyber-security" type="radio" name="interest" value="Cyber-security" class="inline" checked/> Cyber-security</label>
+        <label for="robotics"><input id="robotics" type="radio" name="interest" class="inline" value="Robotics"/> Robotics</label>
+        <label for="AI"><input id="AI" type="radio" name="interest" class="inline" value="AI" /> AI</label>
+      </fieldset>
+      <fieldset>
+        <p id="hobbies-label">What are your hobbies? <span>(Check all that apply)</span></p>
+        <label for="games">
+          <input id="games" type="checkbox" value="games" class="inline" /> Games
+        </label>
+        <label for="sports">
+          <input id="sports" type="checkbox" value="sports" class="inline"/> Sports
+        </label>
+        <label for="movies">
+          <input id="movies" type="checkbox" value="movies" class="inline"/> Movies
+        </label>
+
+        <label id="comments-label" for="comments">Any additional comments:
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
